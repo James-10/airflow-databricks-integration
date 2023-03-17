@@ -10,5 +10,7 @@ then
     minikube start
 fi
 
+eval $(minikube docker-env)
+
 ## install using helm 3
 helm install "$AIRFLOW_NAME" airflow-stable/airflow --version "8.6.1" -f airflow-helm/values.yaml
