@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Airflow files
+/deployment/dags/*
+/deployment/logs/*
+/deployment/plugins/*
+/deployment/logs/scheduler/latest
+
 # Distribution / packaging
 .Python
 build/

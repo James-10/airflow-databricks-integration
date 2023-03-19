@@ -5,6 +5,7 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from databricks_cli.jobs.api import JobsApi
+from databricks_cli.runs.api import RunsApi
 from databricks_cli.sdk.api_client import ApiClient
 from databricks_cli.workspace.api import WorkspaceApi
 
@@ -22,7 +23,7 @@ dag = DAG(
     schedule_interval=None,
 )
 
-username = os.environ.get("user")
+username = os.environ.get("databricks_user")
 notebook_name = 'airflow_notebook'
 notebook_module = "airflow_notebook.py"
 notebooks_folder = f"{os.path.dirname(os.path.dirname(__file__))}/notebooks/"

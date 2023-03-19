@@ -15,5 +15,8 @@ python_version = "3.10"
 python_full_version = "3.10.7"
 
 [scripts]
-webserver = "airflow webserver -p 8002"
+webserver = "airflow webserver -p 8000"
 scheduler = "airflow scheduler"
+up = "sh scripts/build-docker.sh"
+down = "docker compose -f ../deployment/docker-compose.yaml down"
+env = "cp .env.example .env"
