@@ -10,7 +10,7 @@ __pycache__/
 /deployment/dags/*
 /deployment/logs/*
 /deployment/plugins/*
-/deployment/logs/scheduler/latest*
+/deployment/logs/scheduler/latest
 
 # Distribution / packaging
 .Python
