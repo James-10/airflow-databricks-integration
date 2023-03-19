@@ -13,9 +13,6 @@ The `notebooks/` folder holds some sample python modules to execute in Databrick
 
 This project assumes you have working knowledge of these technogogies.
 
-## DAGS
-Add your own python modules
-
 ## Run
 Open a terminal in the project root directory: `airflow-databricks-app`. 
 
