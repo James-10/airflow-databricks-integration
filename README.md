@@ -2,7 +2,7 @@
 Integrate Databricks and airflow by executing code directly on Databricks using an Airflow DAG
 
 ## About
-This project uses the airflow community [docker-compose](https://airflow.apache.org/docs/apache-airflow/2.5.2/docker-compose.yaml) configuration. This is a basic POC for Airflow DAGs' integration with Databricks using the `databricks-cli` trigger the databricks api endpoints.
+This project uses the airflow community [docker-compose](https://airflow.apache.org/docs/apache-airflow/2.5.2/docker-compose.yaml) configuration. This is a basic POC for Airflow DAGs' integration with Databricks using the `databricks-cli` to trigger the databricks api endpoints.
 
 The `notebooks/` folder holds some sample python modules to execute in Databricks and the `dags/` folder has sample DAGS to create/execute the notebooks in Databricks. Add your own DAGs and notebooks to the folders.
 
