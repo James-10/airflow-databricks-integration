@@ -7,7 +7,7 @@ This project uses the airflow community [docker-compose](https://airflow.apache.
 The `notebooks/` folder holds some sample python modules to execute in Databricks and the `dags/` folder has sample DAGS to create/execute the notebooks in Databricks
 
 ## Dependencies
-- `Docker` installed
+- `Docker`
 - a Databricks account
 - `pipenv` for python dependencies
 
