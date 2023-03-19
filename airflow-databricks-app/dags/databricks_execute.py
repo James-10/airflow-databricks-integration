@@ -23,7 +23,7 @@ dag = DAG(
     schedule_interval=None,
 )
 
-username = os.environ.get("user")
+username = os.environ.get("databricks_user")
 notebook_name = 'airflow_notebook'
 notebook_module = "airflow_notebook.py"
 notebooks_folder = f"{os.path.dirname(os.path.dirname(__file__))}/notebooks/"

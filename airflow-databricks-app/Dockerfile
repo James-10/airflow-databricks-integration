@@ -10,6 +10,4 @@ RUN pipenv install --system --deploy
 
 COPY . /airflow-databricks/
 
-COPY ./dags/ /opt/airflow/dags
-
 CMD []

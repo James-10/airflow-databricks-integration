@@ -2,7 +2,7 @@
 
 echo "Starting ariflow-databricks Docker build"
 
-docker build -t airflow:dev .
+docker build -t airflow-databricks:dev .
 
-docker run --name airflow-databricks -d -p 8080:8080 --env-file ./.env airflow:dev bash -c "airflow db init && airflow webserver -p 8080 & airflow scheduler"
-
+docker compose -f ../deployment/docker-compose.yaml up airflow-init
+docker compose -f ../deployment/docker-compose.yaml up -d
