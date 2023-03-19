@@ -5,6 +5,7 @@ from datetime import datetime
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from databricks_cli.jobs.api import JobsApi
+from databricks_cli.runs.api import RunsApi
 from databricks_cli.sdk.api_client import ApiClient
 from databricks_cli.workspace.api import WorkspaceApi
 
